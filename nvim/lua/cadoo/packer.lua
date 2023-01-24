@@ -9,16 +9,33 @@ return require('packer').startup(function(use)
 
     use { "catppuccin/nvim", as = "catppuccin" }
     use "EdenEast/nightfox.nvim"
+    use "rebelot/kanagawa.nvim"
+    use "sainnhe/everforest"
+    use 'nyoom-engineering/oxocarbon.nvim'
+    use "savq/melange-nvim"
+    use({
+        'rose-pine/neovim',
+        as = 'rose-pine',
+        config = function()
+            require("rose-pine").setup({
+                dark_variant = 'moon'
+            })
+        end
+    })
 
     use 'ThePrimeagen/vim-be-good'
 
     use 'nvim-lualine/lualine.nvim'
-    use { 'akinsho/bufferline.nvim', tag = "v3.*" }
+    use { 
+        'akinsho/bufferline.nvim',
+        tag = "v3.*",
+    }
 
     use 'mbbill/undotree'
 
     use 'tpope/vim-fugitive'
     use 'tpope/vim-unimpaired'
+    use 'tpope/vim-sleuth' -- Detect tabstop and shiftwidth automatically
 
     use {
         'numToStr/Comment.nvim',
