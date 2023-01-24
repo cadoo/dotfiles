@@ -14,12 +14,18 @@ return require('packer').startup(function(use)
 
     use 'nvim-lualine/lualine.nvim'
     use { 'akinsho/bufferline.nvim', tag = "v3.*" }
-    
+
     use 'mbbill/undotree'
-    
+
     use 'tpope/vim-fugitive'
-    use 'tpope/vim-commentary'
     use 'tpope/vim-unimpaired'
+
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
 
     use "lukas-reineke/indent-blankline.nvim"
 
