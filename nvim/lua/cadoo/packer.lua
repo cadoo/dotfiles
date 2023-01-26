@@ -7,6 +7,7 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    -- Themes
     use { "catppuccin/nvim", as = "catppuccin" }
     use "EdenEast/nightfox.nvim"
     use "rebelot/kanagawa.nvim"
@@ -45,6 +46,14 @@ return require('packer').startup(function(use)
     }
 
     use "lukas-reineke/indent-blankline.nvim"
+
+    -- Remove trailing spaces
+    use {
+        'lewis6991/spaceless.nvim',
+        config = function()
+            require'spaceless'.setup()
+        end
+    }
 
     -- aligning text by some character, gl and gL keymaps
     use 'tommcdo/vim-lion'
