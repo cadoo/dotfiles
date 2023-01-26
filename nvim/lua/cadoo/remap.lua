@@ -6,6 +6,9 @@ nnoremap("<C-k>", "ddkp<CR>")
 
 nnoremap("<leader><Tab>", "<cmd>BufferLineCycleNext<CR>")
 
+-- Save file
+vim.keymap.set("n", "<leader>s", ":w<CR>")
+
 -- ## Laracasts Nvim as IDE ##
 -- Disable command line typo
 vim.keymap.set("n", "q:", ":q")
