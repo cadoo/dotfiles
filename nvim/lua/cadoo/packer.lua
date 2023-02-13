@@ -27,7 +27,7 @@ return require('packer').startup(function(use)
     use 'ThePrimeagen/vim-be-good'
 
     use 'nvim-lualine/lualine.nvim'
-    use { 
+    use {
         'akinsho/bufferline.nvim',
         tag = "v3.*",
     }
@@ -120,6 +120,21 @@ return require('packer').startup(function(use)
         }
     }
 
+    -- showing diagnostics, references, telescope results, quickfix
+    use {
+        "folke/trouble.nvim",
+        requires = "nvim-tree/nvim-web-devicons",
+        config = function()
+            require("trouble").setup()
+        end
+    }
+
+    -- Browse/search in browser
+    use({
+        "lalitmee/browse.nvim",
+        requires = { "nvim-telescope/telescope.nvim" },
+    })
+
     use 'j-hui/fidget.nvim'
 
     use({
@@ -130,4 +145,7 @@ return require('packer').startup(function(use)
     })
 
     use 'sickill/vim-pasta'
+
+    -- Center buffer
+    use {"shortcuts/no-neck-pain.nvim", tag = "*" }
 end)
