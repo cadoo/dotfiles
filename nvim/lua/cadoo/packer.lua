@@ -14,6 +14,7 @@ return require('packer').startup(function(use)
     use "sainnhe/everforest"
     use 'nyoom-engineering/oxocarbon.nvim'
     use "savq/melange-nvim"
+    use { 'embark-theme/vim', as = 'embark' }
     use({
         'rose-pine/neovim',
         as = 'rose-pine',
