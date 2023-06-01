@@ -121,12 +121,27 @@ return require('packer').startup(function(use)
         }
     }
 
+    use "b0o/schemastore.nvim"
+
     -- showing diagnostics, references, telescope results, quickfix
     use {
         "folke/trouble.nvim",
         requires = "nvim-tree/nvim-web-devicons",
         config = function()
             require("trouble").setup()
+        end
+    }
+
+    use {
+        "folke/which-key.nvim",
+        config = function()
+            vim.o.timeout = true
+            vim.o.timeoutlen = 300
+            require("which-key").setup {
+                -- your configuration comes here
+                -- or leave it empty to use the default settings
+                -- refer to the configuration section below
+            }
         end
     }
 
