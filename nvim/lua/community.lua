@@ -12,6 +12,10 @@ return {
   { import = "astrocommunity.pack.blade" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.vim-dogrun" },
+  { import = "astrocommunity.colorscheme.mellifluous-nvim" },
+  { import = "astrocommunity.colorscheme.bamboo-nvim" },
+  { import = "astrocommunity.colorscheme.rose-pine" },
 
   -- import/override with your plugins folder
 }
