@@ -16,6 +16,10 @@ return {
   { import = "astrocommunity.colorscheme.mellifluous-nvim" },
   { import = "astrocommunity.colorscheme.bamboo-nvim" },
   { import = "astrocommunity.colorscheme.rose-pine" },
+  { import = "astrocommunity.colorscheme.gruvbox-nvim" },
+  { import = "astrocommunity.colorscheme.citruszest-nvim" },
+  { import = "astrocommunity.colorscheme.melange-nvim" },
+  { import = "astrocommunity.colorscheme.fluoromachine-nvim" },
 
   -- import/override with your plugins folder
 }
